@@ -1,0 +1,53 @@
++ 크롤러 : 사람처럼 웹에 접속해서 데이터를 얻어오는 프로그램
+
+> 필요한 모듈
+1) 웹페이지를 요청하는 모듈 : requests, urllib, selenium
+2) 요청결과를 파이썬에서 사용할 수 있는 타입으로 변환하는 모듈 : bs4
+
+
+
+
+cmd -> pip install requests
+pycharm 에서도 가능
+
+~selenium 은 모듈이자 프레임워크(웹을 자동으로 테스트하는 프레임워크)~
+
+
+html = '''<html><head><title>test site</title></head><body><p>test1</p><p>test2</p><p>test3</p></body></html>'''
+
+
+html = '''
+<html>
+<head>
+<title>test site</title>
+</head>
+<body>
+<p>
+    <a>test1</a>
+    <b>test2</b>
+    <c>test3</c>
+</p>
+</body>
+</html>
+'''
+
+
+html = '''
+<html>
+<head>
+<title>test site</title>
+</head>
+<body>
+<p>test1</p>
+<p id="d" class="c"> test2 </p>
+<p class= "e">test3</p>
+<a> a tag</a>
+<b> b tag</b>
+</body>
+</html>
+'''
+
+
+크롬드라이버
+https://chromedriver.chromium.org/downloads
+If you are using Chrome version 76, please download ChromeDriver 76.0.3809.126
